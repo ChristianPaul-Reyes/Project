@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>07 Exercise</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+      greet('Chris');
+      greet('Yuuka');
+      greet();
+
+      function greet(name) {
+        //(name === undefined)
+        if (!name) {
+          console.log('Hi there!');
+        } else {
+          console.log(`Hello! ${name}!`);
+        }
+      }
+      */
+
+      /*
+      console.log(convertToFahrenheit(25));
+      console.log(convertToCelsius(86));
+
+      function convertToFahrenheit(celsius) {
+        return celsius * 9 / 5 + 32
+      }
+
+      function convertToCelsius(fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9
+      }
+      */
+     
+      function convertToFahrenheit(celsius, unit) {
+        return (celsius * 9 / 5 + 32) + unit
+      }
+
+      function convertToCelsius(fahrenheit, unit) {
+        return ((fahrenheit - 32) * 5 / 9) + unit
+      }
+
+      function convertTemperature(degree, unit) {
+        if (unit === 'C') { 
+          //return convertToFahrenheit(degree, 'F');
+          const result = convertToFahrenheit(degree, 'F');
+          //console.log(result);
+          return `${result}`;
+          
+        } else {
+          //return convertToCelsius(degree, 'C');
+          const result = convertToCelsius(degree, 'C');
+          //console.log(result);
+          return `${result}`;
+          
+        }
+      }
+
+      console.log(convertTemperature(25, 'C'));
+      console.log(convertTemperature(86, 'F'));
+      console.log(convertTemperature(18, 'C'));
+      console.log(convertTemperature(70, 'F'));
+
+
+
+      
+    </script>
+  </body>
+</html>

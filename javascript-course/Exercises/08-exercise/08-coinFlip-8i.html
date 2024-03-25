@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>08 - Coin Flip - 8i</title>
+  </head>
+
+  <body>
+    <button onclick="
+        playGames('heads');
+      ">
+      heads
+    </button>
+    <button onclick="
+        playGames('tails');
+      ">
+      tails
+    </button>
+
+    <script>
+      const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+      function playGames(guess) {
+        
+
+        if (guess === 'heads') {
+          console.log(guess === result ? 'You win!' : 'You lose!');
+        } else {
+          console.log(guess === result ? 'You win!' : 'You lose!');
+        }
+        
+      }
+
+      
+
+    </script>
+  </body>
+</html>

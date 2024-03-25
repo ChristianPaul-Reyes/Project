@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            08 Exercise
+        </title>
+    </head>
+    <body>
+        <script>
+
+            
+            const product1 = {
+                name: 'Chocolate',
+                price: 20
+            };
+
+            const product2 = {
+                name: 'Vanilla',
+                price: 20
+            }
+
+            console.log(comparePrice(product1, product2));
+
+            function comparePrice(product1, product2) {
+
+                let result = '';
+
+                if (product1.price > product2.price) {
+                    result = product2;
+                } else if (product2.price > product1.price) {
+                    result = product1;
+                } else {
+                    result = 'same price'
+                }
+
+                return result;
+            }
+             
+        </script>
+    </body>
+
+</html>

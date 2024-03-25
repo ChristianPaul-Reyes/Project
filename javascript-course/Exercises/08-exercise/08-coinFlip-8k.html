@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>08 - Coin Flip - 8k</title>
+  </head>
+
+  <body>
+    <button onclick="
+        playGames('heads');
+      ">
+      heads
+    </button>
+    <button onclick="
+        playGames('tails');
+      ">
+      tails
+    </button>
+
+    <script>
+      let score = JSON.parse(localStorage.getItem('score')) || { 
+        wins: 0,
+        losses: 0
+      };
+
+      /*
+      const score = {
+        wins: 0,
+        losses: 0
+      };
+      */
+
+
+      function playGames(guess) {
+        const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? 'heads' : 'tails';
+        
+        console.log(guess === result ? 'You win!' : 'You lose!');
+
+        if (guess === result) {
+          score.wins += 1;
+        } else {
+          score.losses += 1;
+        }
+
+        //console.log(randomNumber);
+        console.log(score);
+
+        localStorage.setItem('score', JSON.stringify(score));
+
+      }
+
+      /*
+      CHALLENGE: Make the updating score a function
+      */
+    </script>
+  </body>
+</html>

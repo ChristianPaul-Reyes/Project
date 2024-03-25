@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+
+  </head>
+
+  <body>
+    
+    <p>
+      Rock Paper Scissors
+    </p>
+
+
+    <button onclick="
+      playGame('rock');
+      ">
+      Rock
+    </button>
+
+    <button onclick="
+      playGame('paper');
+      ">
+      Paper
+    </button>
+
+    <button onclick="
+      playGame('scissors');
+      ">
+      Scissors
+    </button>
+
+    <!--
+      This button is used for resetting the score.
+
+      'Onclick' the score will be reset
+    -->
+    <button onclick="
+    /*
+    The value of wins, losses, and ties is being assign to 0 | Which makes it reset the score.
+    */
+      score.wins = 0; // 0 has been assigned to the value of score.wins
+      score.losses = 0; // 0 has been assigned to the value of score.losses
+      score.ties = 0; // 0 has been assigned to the value of score.ties
+      localStorage.removeItem('score');
+      ">
+      Reset Score <!-- Text that being display on the button -->
+    </button>
+
+    <script>
+
+      /*
+      Algorithm (Rock Paper Scissor)
+      When we click a button:
+      1. Computer randomly selects a move
+      2. Compare the moves to get the result
+      3. Update a score
+      4. Display the result and score in a popup
+      */
+
+      /*
+      The (score variable) stores an object.
+
+      The object has the properties of wins, losses, and ties.
+
+      Wins stores the number of wins.
+      Losses stores the number of losses.
+      Ties stores the number of ties.
+
+      This variable is created outside of a function because every time we make a move, we need to update the score from the last time | In order to save the score from last time, we need to keep it outside the function | If the score was inside the function, the function would create a new score every time, which is not what we want.
+      */
+      /*
+      const score = {
+        wins: 0,
+        losses: 0,
+        ties: 0
+      };
+      */
+
+      let score = JSON.parse(localStorage.getItem('score')) || {
+        wins: 0,
+        losses: 0,
+        ties: 0
+      };
+
+      /*
+      // similar to score === null 
+      if (!score) {
+        score = {
+          wins: 0,
+          losses: 0,
+          ties: 0
+        };
+      }
+      */
+
+      console.log(score);
+
+      function playGame(playerMove) {
+        const computerMove = pickComputerMove();
+
+        let result = '';
+
+        // Algorithm #2
+        if (playerMove === 'scissors') {
+          if (computerMove === 'rock') {
+            result = 'You lose.';
+          } else if (computerMove === 'paper') {
+            result = 'You win.';
+          } else if (computerMove === 'scissors') {
+            result = 'Tie.';
+          }
+        // Algorithm #2
+        } else if (playerMove === 'paper') {
+          if (computerMove === 'rock') {
+            result = 'You win.';
+          } else if (computerMove === 'paper') {
+            result = 'Tie.';
+          } else if (computerMove === 'scissors') {
+            result = 'You lose.';
+          }
+        // Algorithm #2
+        } else if (playerMove === 'rock') {
+          if (computerMove === 'rock') {
+            result = 'Tie.';
+          } else if (computerMove === 'paper') {
+            result = 'You lose.';
+          } else if (computerMove === 'scissors') {
+            result = 'You win.';
+          }
+        }
+
+        //Algorithm #3 
+        // This if-statement updates a score
+        // if result is equal to 'You win', +1 is added to wins property in the score variable
+        // else if, result is equal to 'You lose', +1 is added to losses property in the score variable
+        // else if, result is equal to 'Tie', +1 is added to tie property in the score variable
+        if (result === 'You win.') {
+          score.wins += 1; 
+          // score.wins = score.wins + 1; 
+          // basically, the 2 are the same | the former is a shortcut.
+        } else if (result === 'You lose.') {
+          score.losses += 1;
+        } else if (result === 'Tie.') {
+          score.ties += 1;
+        }
+
+        // Algorithm #4
+        /*
+        alert() is used for popup.
+
+        The codes inside the alert(), displays:
+        - the player move(playerMove), 
+        - computer move(computerMove), 
+        - the result(result), 
+        - the Wins(score.wins), 
+        - the Losses(score.losses), 
+        - and the Ties(score.ties) 
+        */
+
+        /*
+        By using the backtick(` `) | It allows to use the multi-line string | Which means you can add new line by pressing enter
+        | the player move, computer move, and result is on the 1st line 
+        | the Wins, Losses, and Ties is on the 2nd line
+        | the reason why there's no extra 'white spaces' on the left in the Wins, Losses, and Ties line is because using multi-line string, the 'white spaces' is being applied during popup 
+        */
+
+        /*
+        localStorage only supports string
+        */
+
+        localStorage.setItem('score', JSON.stringify(score));
+
+        alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+Wins: ${score.wins}, Losses ${score.losses}, Ties ${score.ties}`);
+      }
+
+      //Algorithm #1
+      function pickComputerMove() {
+
+        const randomNumber = Math.random();
+
+        let computerMove = '';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+          computerMove = 'rock';
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+          computerMove = 'paper';
+        } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+          computerMove = 'scissors';
+        }
+
+        return computerMove;
+
+      }
+
+    </script>
+  </body>
+</html>
+
+
+
+

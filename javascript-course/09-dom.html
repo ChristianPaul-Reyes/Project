@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <button>
+      hello
+    </button>
+    
+    <button class="js-button"> 
+      Second Button
+    </button> <!-- the button has the class attribute named js-button. This will be used for class selector. To target this specific button element for iteration-->
+    
+
+    <script>
+      console.log(document.querySelector('button').innerHTML); /* The codes display the inner content of the button element as a string, which is the string text 'hello' | querySelector() is a function from document object. This function allow us to get any HTML element and put it in the JavaScript */
+      document.querySelector('button')
+        .innerHTML = 'Changed'; /* The text string from button has been change from 'hello' into 'Changed' */ 
+      
+      const buttonElement = document.querySelector('.js-button'); /* The HTML element that has the class named js-button has been selected by .querySelector and has been assigned to buttonElement variable */
+      console.log(buttonElement); /* Display the value of buttonElement which is the .js-button as an object */
+
+      
+      //console.log(document.title); /* The codes display the title of the webpage.*/
+      //console.log(typeof document.title); /* The codes display the datatype of document.title which is a string*/
+      //document.title = 'Changed'; /* The title of the webpage has been change from DOM to 'Changed' */
+
+      //console.log(document.body); /* Display the content of the body element as JavaScript object but DOM format*/
+      //console.log(typeof document.body); /* Display the datatype of the document.body which is an object*/
+
+      //console.log(document.body.innerHTML); /* Display the inner content of the body element as string*/
+      //document.body.innerHTML = <button>Good job!</button>; /* The codes change the content of the body element into button that has the text of Good job! */ 
+      
+
+      //document.body.innerHTML = 'hello'; 
+      //document.title = 'Good job!'; 
+    </script>
+  </body>
+</html>
+
+
+
+

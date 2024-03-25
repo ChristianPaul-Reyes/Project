@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>09-9h</title>
+    </head>
+    <body>
+        <input 
+            placeholder="type something"
+            class="js-input"
+            onkeyup="
+                let inputElem = document.querySelector('.js-input')
+                document.querySelector('.text').innerHTML = inputElem.value;
+            ">
+        <p class="js-text">            
+        </p>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            08 Exercise
+        </title>
+    </head>
+    <body>
+        <script>
+
+            const product1 = {
+                name: 'Chocolate',
+                price: 20
+            };
+
+            const product2 = {
+                name: 'Chocolate',
+                price: 20
+            }
+
+            console.log(isSameProduct(product1, product2));
+
+            function isSameProduct(product1, product2) {
+                
+                if (product1.name === product2.name && product1.price === product2.price ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            /*
+            // Shorter alternative isSameProduct() method
+            function isSameProduct (product1, product2) {
+                
+                return (
+                    product1.name === product2.name && product1.price === product2.price 
+                )
+            }
+            */
+             
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,70 @@
+.uber-button {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+}
+
+.amazon-button {
+    background-color: rgb(255, 216, 20);
+    border: none;
+    height: 30px;
+    width: 160px;
+    border-radius: 15px;
+}
+
+.github-buttton {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 90px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.bootstrap1-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.bootstrap2-button {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    height: 36px;
+    width: 105px;
+    border-radius: 6px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.linkedln1-button {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 220px;
+    border-radius: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.linkedln2-button {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    height: 36px;
+    width: 80px;
+    border-radius: 18px;
+    font-weight: bold;
+    border-color: rgb(10, 102, 194);
+    border-style: solid;
+    border-width: 1px;
+}

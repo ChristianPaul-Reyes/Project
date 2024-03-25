@@ -1,0 +1,95 @@
+/*
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 200px;
+}
+*/
+
+/*
+.question {
+    font-family: Arial;
+    width: 300px;
+    border: solid;
+    border-width: 1px;
+    
+}
+
+.yes-button {
+    margin-left: 12px;
+    margin-bottom: 16px;
+}
+
+.no-button {
+    
+    margin-bottom: 16px;
+}
+    */
+
+/*
+.youtube-music {
+    width: 350px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: black;
+}
+
+p {
+    font-family: Arial;    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.install {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.add {
+    
+    color: gray;
+}
+    */
+
+.div-twitter {
+    padding: 10px 10px;
+    width: 384px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+    border-radius: 8px;
+}
+
+.noa-profile {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 200px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.what-input {
+    border: none;
+    vertical-align: middle;
+    width: 250px;
+}
+
+.tweet-button {
+    vertical-align: middle;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+}
+

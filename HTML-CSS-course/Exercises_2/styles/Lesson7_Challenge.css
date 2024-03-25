@@ -1,0 +1,83 @@
+/*
+.search-bar {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.google-search {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    width: 500px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+    
+}
+
+.google-search:focus {
+    outline: none;
+}
+
+p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.email {
+    margin-bottom: 5px;
+}
+
+.email-input {
+    margin-bottom: 13px;
+    width: 400px;
+    height: 20px;
+}
+
+.agree-join-description {
+    margin-bottom: 13px;
+}
+
+.agree-join-button {
+    background-color: royalblue;
+    color: white;
+    width: 400px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 200px;
+}
+
+*/
+.noa-profile {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 200px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.what-input {
+    border: none;
+    vertical-align: middle;
+    width: 250px;
+}
+
+.tweet-button {
+    vertical-align: middle;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+}
+
+
+

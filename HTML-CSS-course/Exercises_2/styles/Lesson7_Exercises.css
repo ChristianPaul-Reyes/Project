@@ -1,0 +1,17 @@
+.noa-1 {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.noa-2 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.noa-3 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 200px;
+}

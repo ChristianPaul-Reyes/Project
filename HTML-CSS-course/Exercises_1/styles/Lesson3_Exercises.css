@@ -1,0 +1,118 @@
+.uber-button {
+    background-color: black;
+    color: white;
+    height: 36px;
+    width: 105px;
+    border: none;
+    cursor: pointer;
+    transition: opacity .15s;
+}
+
+    .uber-button:hover {
+        opacity: 0.8;
+    }
+
+.amazon-button {
+    background-color: rgb(255, 216, 20);
+    border: none;
+    height: 30px;
+    width: 160px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color .15s;
+}
+
+    .amazon-button:hover {
+        background-color: rgb(240, 210, 18);
+    }
+
+.github-buttton {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 90px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity .15s;
+    transition: box-shadow .15s;
+}
+
+    .github-buttton:hover {
+        opacity: .9;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, .15);
+    }
+
+.bootstrap1-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: background-color .15s;
+}
+
+    .bootstrap1-button:hover {
+        background-color: rgb(104, 68, 155);
+    }
+
+.bootstrap2-button {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    height: 36px;
+    width: 105px;
+    border-radius: 6px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    transition: background-color .15s;
+    transition: color .15s;
+    transition: none .15s;
+}
+
+    .bootstrap2-button:hover {
+        background-color: gray;
+        color: white;
+        border: none;
+    }
+
+.linkedln1-button {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 220px;
+    border-radius: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color .15s;
+}
+
+    .linkedln1-button:hover {
+        background-color: rgb(6, 80, 155);
+    }
+
+.linkedln2-button {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    height: 36px;
+    width: 80px;
+    border-radius: 18px;
+    font-weight: bold;
+    border-color: rgb(10, 102, 194);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+    .linkedln2-button:hover {
+        background-color: rgb(225, 237, 250);
+        border-width: 2px;
+    }
